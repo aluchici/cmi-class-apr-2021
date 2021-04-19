@@ -7,6 +7,35 @@
 
 # Create a "private" variable
 
+# ====== MODULES & PACKAGES ====== #
+# Print today's date using the sample_package
+
+# ====== DATA TYPES & OPERATORS ====== #
+# Create a list of integers from 0 to 5
+
+# Add an element to the list
+
+# Concatenate two lists 
+
+# Print different elements from the list
+
+# Modify a list element
+
+# Create a set 
+
+# Add an element to the set 
+
+# Modify a set element
+
+# Create a dictionary of (index, day) for the days of the week
+
+# Get keys, values from the dictionary
+
+# Print days starting with "t" from the dictionary
+
+# Replace one dict item
+
+# Add new item
 
 # ====== CONTROL STRUCTURES ====== #
 # IF / ELSE

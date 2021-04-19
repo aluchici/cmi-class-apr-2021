@@ -18,7 +18,7 @@ _mine = 10
 
 __my_private_variable = 'Can\'t touch this! Ta na na na'
 
-# ====== MODULES & PACKAGES ===== #
+# ====== MODULES & PACKAGES ====== #
 # Print today's date using the sample_package
 import packages.sample_package.sample_module as my_module
 
@@ -26,6 +26,83 @@ print(my_module.TODAY)
 
 # import modules.sample_module.TODAY
 # print(TODAY)
+
+# ====== DATA TYPES & OPERATORS ====== #
+# Create a list of integers from 0 to 5
+L1 = [0, 1, 2, 3, 4, 5]
+print(len(L1))
+
+# Add an element to the list
+L1.append('Test')
+print(L1)
+
+# Print different elements from the list
+print(L1[3:2])
+print(L1[0])
+print(L1[-1])
+
+# Modify a list element
+L1[3] = "New"
+print(L1)
+
+# Concatenate two lists 
+L2 = ["text", "c", 1, 2]
+L1.extend(L2)
+print(L1)
+
+# Create a set 
+s1 = set(L1)
+print(s1)
+
+s2 = (1, 2, 4, 5)
+print(s2)
+
+s3 = ([1,2], 3)
+print(s3)
+
+# Add an element to the set 
+# s2.add(3)
+# print(s2)
+
+s3[0].append('3')
+print(s3)
+
+# Modify a set element
+# s1[0] = 'New'
+# print(s1)
+
+s3[0][1] = 'New'
+print(s3)
+
+# Create a dictionary of (index, day) for the days of the week
+d = {
+    1: 'monday',
+    2: 'tuesday',
+    3: 'wednesday',
+    4: 'thursday',
+    5: 'friday',
+    6: 'saturday',
+    7: 'sunday'
+}
+
+# Get keys, values from the dictionary
+print(d.keys())
+print(d.values())
+
+# Print days starting with "t" from the dictionary
+for value in d.values():
+    if value[0] == "t":
+        print(value)
+
+# Replace one dict item
+d[1] = 'Monday'
+print(d)
+
+# Add new item
+d['test'] = 'test item'
+print(d)
+print(d.keys())
+print(d.values())
 
 # ====== CONTROL STRUCTURES ====== #
 # IF / ELSE
