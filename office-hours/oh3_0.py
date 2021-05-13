@@ -92,7 +92,7 @@ class MongoMediator:
         
 
 if __name__ == "__main__": 
-    conn_str = "mongodb+srv://bogdan:amilar@general-free.odo4h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    conn_str = ""
     # connect to database
     mongo = MongoMediator(conn_string=conn_str, db_name="bcr_base", collection_name="branches")
 
