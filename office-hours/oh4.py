@@ -149,6 +149,9 @@ def concatenate(a, b):
 def concatenate(a, b):
     return a + b 
 
+def callback(a, l, f):
+    a = a + 1
+    f(l, a)
 
 if __name__ == '__main__':
     print(format('TEST'))
@@ -162,3 +165,7 @@ if __name__ == '__main__':
 
     print(concatenate([1,2,3], 'a'))
     print(concatenate('string 1 + ', 'strint 2'))
+
+    l = [1, 2, 3]
+    callback(10, l, lambda x, y: x.append(y))
+    print(l)
